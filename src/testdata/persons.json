@@ -2,10 +2,10 @@
 	{
 		"id": "0",
 		"first_name": "Adam",
-		"last_name": "Douche",
+		"last_name": "is a Douche",
 		"gender": "male",
 		"date_of_birth": "0.0.0.0",
-		"date_of_death": "",
+		"date_of_death": "wasd",
 		"born_in": "-10000",
 		"memo": "my favoute person"
 	},
@@ -21,11 +21,11 @@
 	},
 	{
 		"id": "2",
-		"first_name": "John",
-		"last_name": "Doe",
+		"first_name": "jonny",
+		"last_name": "danger has a long name",
 		"gender": "male",
 		"date_of_birth": "1.2.3.4",
 		"born_in": "2005",
-		"memo": "my second favoute person"
+		"memo": "my thirdasd favoute person lorem ipsum long text"
 	}
 ]

@@ -1,0 +1,47 @@
+[
+	{
+		"id": "0",
+		"type": "my_type",
+		"title": "creative Title",
+		"subtitle": "even more title",
+		"directory": "dir",
+		"directory_no": "dir_no",
+		"comp_date_from": "-",
+		"comp_date_to": "wasd",
+		"memo": "my favoute work",
+		"duplicate": "yes",
+		"date_original": "-1",
+		"date_version": "1999",
+		"set": "set"
+	},
+	{
+		"id": "1",
+		"type": "my_type1",
+		"title": "creative Title11",
+		"subtitle": "even more title1",
+		"directory": "dir1",
+		"directory_no": "dir_no1",
+		"comp_date_from": "-1",
+		"comp_date_to": "wasd1",
+		"memo": "my favoute work1",
+		"duplicate": "yes1",
+		"date_original": "-11",
+		"date_version": "19991",
+		"set": "set1"
+	},
+	{
+		"id": "2",
+		"type": "my_type2",
+		"title": "creative Title2",
+		"subtitle": "even more title2",
+		"directory": "dir2",
+		"directory_no": "dir_no2",
+		"comp_date_from": "-2",
+		"comp_date_to": "wasd2",
+		"memo": "my favoute work2",
+		"duplicate": "yes2",
+		"date_original": "-12",
+		"date_version": "19992",
+		"set": "set2"
+	}
+]
