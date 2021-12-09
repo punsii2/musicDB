@@ -1,8 +1,11 @@
 <script lang="ts">
 	import { Styles } from "sveltestrap";
 	import Person from "./Person.svelte";
+	import persons from "./persons.json";
 	import Nested from "./Nested.svelte";
 	export let name: string;
+	console.log(persons);
+	console.log(typeof(persons));
 	let countA = 1;
 	let countB = 1;
 	let numbers = [];
@@ -17,33 +20,13 @@
 		numbers[numbers.length] = " " + (numbers.length + 1);
 		numbers = numbers.slice(1);
 	}
-	$: {
-		console.log(`countA is ${countA}\n countB is ${countB}`);
-	}
-
-	let test_person_1 = {
-		first_name: "John",
-		last_name: "Doe",
-		gender: "male",
-		date_of_birth: "1.2.3.4",
-		date_of_death: "5.6.7.8",
-		born_in: "1999",
-		memo: "my favoute person",
-	};
-	let test_person_2 = {
-		first_name: "John",
-		last_name: "Doe",
-		gender: "male",
-		date_of_birth: "1.2.3.4",
-		born_in: "2005",
-		memo: "my second favoute person",
-	};
 </script>
 
 <main>
-	<Styles/>
-	<Person {...test_person_1} />
-	<Person {...test_person_2} />
+	<Styles />
+	{#each persons as person}
+		<Person {...person} />
+	{/each}
 	<button on:click={incrementCountA}> Add to A </button>
 	{#if countA > numbers.length}
 		<button on:click={incrementCountB}> Add to B </button>

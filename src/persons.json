@@ -1,0 +1,31 @@
+[
+	{
+		"id": "0",
+		"first_name": "Adam",
+		"last_name": "Douche",
+		"gender": "male",
+		"date_of_birth": "0.0.0.0",
+		"date_of_death": "",
+		"born_in": "-10000",
+		"memo": "my favoute person"
+	},
+	{
+		"id": "1",
+		"first_name": "John",
+		"last_name": "Doe",
+		"gender": "male",
+		"date_of_birth": "1.2.3.4",
+		"date_of_death": "5.6.7.8",
+		"born_in": "1999",
+		"memo": "my favoute person"
+	},
+	{
+		"id": "2",
+		"first_name": "John",
+		"last_name": "Doe",
+		"gender": "male",
+		"date_of_birth": "1.2.3.4",
+		"born_in": "2005",
+		"memo": "my second favoute person"
+	}
+]

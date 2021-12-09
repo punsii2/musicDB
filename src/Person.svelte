@@ -3,6 +3,7 @@
 	import { Modal } from "sveltestrap";
 	import { Card, CardHeader, CardTitle } from "sveltestrap";
 
+	export let id: number = undefined;
 	export let first_name: string;
 	export let last_name: string;
 	export let gender: string;
