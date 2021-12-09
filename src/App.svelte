@@ -14,10 +14,10 @@
 
     <TabContent>
         <TabPane tabId="music" tab={name}>Hello {name}</TabPane>
-        <TabPane tabId="persons" tab="persons" active>
+        <TabPane tabId="persons" tab="Persons" active>
             <PersonSearch {persons} />
         </TabPane>
-        <TabPane tabId="works" tab="works">
+        <TabPane tabId="works" tab="Works">
             <WorkSearch {works} />
         </TabPane>
     </TabContent>

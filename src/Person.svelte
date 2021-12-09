@@ -35,6 +35,10 @@
     </CardHeader>
     <Container>
         <Row>
+            <Col xs={{ size: 6 }}>Gender:</Col>
+            <Col>{gender}</Col>
+        </Row>
+        <Row>
             <Col xs={{ size: 6 }}>Date of Birth:</Col>
             <Col>{date_of_birth}</Col>
         </Row>
