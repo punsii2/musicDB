@@ -24,6 +24,11 @@
 </main>
 
 <style>
+    :global(body) {
+        background-image: url("http://sfwallpaper.com/images/website-background-6.jpg");
+        background-repeat: repeat;
+    }
+
     main {
         text-align: center;
         padding: 1em;
