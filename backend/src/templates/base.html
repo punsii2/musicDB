@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek App</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Geek App</h1>
+      <form action="/web/persons" method="post">
+        <div>
+          <p>Enter Person Details</p>
+          <label>First Name</label>
+          <input type="text" name="name_first" placeholder="..." /><br />
+          <label>Last Name</label>
+          <input type="text" name="name_last" placeholder="..." /><br />
+          <label>Gender</label>
+          <input type="text" name="gender" placeholder="..." /><br />
+          <label>Born in</label>
+          <input type="text" name="born_in" placeholder="..." /><br />
+          <label>Memo</label>
+          <input type="text" name="memo" placeholder="..." /><br />
+        </div>
+        <button type="submit">Add</button>
+      </form>
+
+      <hr />
+
+      {% for person in person_list %}
+      <div>
+        <p>
+          {{person.id}} | {{person.name_first}} | {{person.name_last}}|
+          {{person.born_in}}| {{person.memo}} | {{person.gender}}
+        </p>
+
+        {% if person.name_last == "test" %}
+        <span>This is a test person.</span>
+        {% else %}
+        <span>This is not a test person.</span>
+        {% endif %}
+
+        <a href="/web/persons/update/{{person.id}}">Update</a>
+        <a href="/web/persons/delete/{{person.id}}">Delete</a>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
